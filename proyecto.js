@@ -13,7 +13,7 @@ console.log ("televisor " + precioProducto1)
 console.log ("celular " + precioProducto2)
 console.log ("heladera " + precioProducto3)
 
-let producto = prompt("elija que producto desea comprar!");
+let producto = prompt("elija que producto desea comprar! " + "televisor " + precioProducto1 + " " +"celular " + precioProducto2 + " " +  "heladera " + precioProducto3);
 
 let number = 0;
 
@@ -36,14 +36,14 @@ while(producto !="0"){
             break;
 }
 console.log (number)
-producto = prompt("elija otro producto o apriete ESC")
+producto = prompt("elija otro producto o apriete 0 ")
 }
 
 console.log ("La suma de su compra es de " + number)
 
 
 
-let precioCuotas = prompt("elija entre efectivo o en 12 cuotas");
+let precioCuotas = prompt("elija entre efectivo o en 12 cuotas ");
 
 
     switch  (precioCuotas) {
