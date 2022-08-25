@@ -1,5 +1,3 @@
-
-// let Producto = prompt('elija un producto')
 const suma = (a,b) => a + b;
 // const resta = (a,b) => a + b;
 // const iva = x => x * 0.21;
@@ -10,6 +8,7 @@ const recargo = x => x * 0.10;
 let precioProducto1 = 12500;
 let precioProducto2 = 13000;
 let precioProducto3 = 9500;
+
 console.log ("televisor " + precioProducto1)
 console.log ("celular " + precioProducto2)
 console.log ("heladera " + precioProducto3)
