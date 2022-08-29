@@ -58,24 +58,3 @@ let precioCuotas = prompt("elija entre efectivo o en 12 cuotas ");
         default: 0;
             break;
 }
-
-
-
-
-// let nuevoPrecio1 = resta(suma(precioProducto1, iva(precioProducto1)),descuento);
-
-// let nuevoPrecio2 = resta(suma(precioProducto2, iva(precioProducto2)),descuento);
-
-// let nuevoPrecio3 = resta(suma(precioProducto3, iva(precioProducto3)),descuento);
-
-// console.log (nuevoPrecio1);
-// console.log (nuevoPrecio2);
-// console.log (nuevoPrecio3);
-
-
-
-// let nuevoPrecio4 = suma (cuotas((precioProducto1),12),cuotas(recargo(precioProducto1),12));
-// let nuevoPrecio5 = cuotas (precioProducto1,12)
-
-
-// console.log (nuevoPrecio4)
