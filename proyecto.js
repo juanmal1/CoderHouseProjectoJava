@@ -13,7 +13,7 @@ console.log ("televisor " + precioProducto1)
 console.log ("celular " + precioProducto2)
 console.log ("heladera " + precioProducto3)
 
-let producto = prompt("elija que producto desea comprar! " + "televisor " + precioProducto1 + " " +"celular " + precioProducto2 + " " +  "heladera " + precioProducto3);
+const producto = number(prompt("elija que producto desea comprar! " + "televisor " + precioProducto1 + " " +"celular " + precioProducto2 + " " +  "heladera " + precioProducto3));
 
 let number = 0;
 
