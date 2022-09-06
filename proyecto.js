@@ -4,7 +4,7 @@ const suma = (a,b) => a + b;
 const cuotas = (a,b) => a / b;
 const recargo = x => x * 0.10;
 
-const Prod = [
+const Productos = [
     {
         nombre: "Televisor",
         precio: 15500,
@@ -21,44 +21,48 @@ const Prod = [
         stock: 2
     }
 ]
-console.table(Prod);
+console.table(Productos);
 
 alert("bienvenido a tienda JM")
 
-let producto = prompt("elija que producto desea comprar! ");
+let producto = prompt("elija que producto desea comprar!:\n1. televisor\n2. Celular\n3. Heladera\n0.Salir ");
 const carrito = [];
 
 while(producto !="0"){ 
     switch  (producto) {
         case "1":
-            if(Prod[0].stock > 0){
-                carrito.push(Prod[0].precio)
-                Prod[0].stock -= 1
+            if(Productos[0].stock > 0){
+                carrito.push(Productos[0].precio)
+                Productos[0].stock -= 1
             }else{
-                alert("Pa no hay stock")
+                alert("no hay stock")
             }
+            alert('agregaste televisor al carrito')
             break;
         case "2":
-            if(Prod[1].stock > 0){
-                carrito.push(Prod[1].precio)
-                Prod[1].stock -= 1
+            if(Productos[1].stock > 0){
+                carrito.push(Productos[1].precio)
+                Productos[1].stock -= 1
             }else{
-                alert("Pa no hay stock")
+                alert("no hay stock")
             }
+            alert('agregaste celular al carrito')
             break;
         case "3":
-            if(Prod[2].stock > 0){
-                carrito.push(Prod[2].precio)
-                Prod[2].stock -= 1
+            if(Productos[2].stock > 0){
+                carrito.push(Productos[2].precio)
+                Productos[2].stock -= 1
             }else{
-                alert("Pa no hay stock")
+                alert("no hay stock")
             }
+            alert('agregaste heladera al carrito')
             break;
         default: 0;
+        alert('elija un producto de la lista')
             break;
     }
     console.log(carrito)
-    producto = prompt("elija otro producto o apriete 0 ")
+    producto = prompt("elija otro producto desea comprar!:\n1. televisor\n2. Celular\n3. Heladera\n0.Salir ")
 }
 
 let total = 0; for(let i of carrito) total+=i;
@@ -67,17 +71,17 @@ console.log(total)
 let precioCuotas = prompt("elija entre efectivo o en 12 cuotas ");
     switch  (precioCuotas) {
         case "efectivo":
-            console.log("Precio final producto " + total)
+            alert("Precio final producto " + total)
             break;
         case "12":
-            console.log("en 12 cuotas es "+ suma (cuotas((total),12),cuotas(recargo(total),12)))
-            console.log("el precio final es de "+ (total + recargo(total)))
+            alert("en 12 cuotas es "+ suma (cuotas((total),12),cuotas(recargo(total),12)))
+            alert("el precio final es de "+ (total + recargo(total)))
             break;
         default: 0;
             break;
     }
     
 console.log("PRODUCTOS DISPONIBLES");
-console.table(Prod)
+console.table(Productos)
 
-console.log("gracias por comprar en tienda JM")
+alert("gracias por comprar en tienda JM")
