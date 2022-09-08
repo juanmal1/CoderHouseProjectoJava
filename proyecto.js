@@ -22,9 +22,9 @@ const productos = [
     }
 ]
 
-let nuevoArray = productos.filter((elemento) => elemento.stock > 2)
+let comprobarStock = productos.filter((elemento) => elemento.stock >= 2)
 
-console.table(nuevoArray);
+console.table(comprobarStock);
 
 console.table(productos);
 
@@ -81,6 +81,7 @@ let precioCuotas = prompt("elija entre efectivo o en 12 cuotas ");
         case "12":
             alert("el total es de 12 cuotas de "+ suma (cuotas((total),12),cuotas(recargo(total),12)))
             alert("el precio final es de "+ (total + recargo(total)))
+            
             break;
         default: 0;
             break;
