@@ -26,8 +26,6 @@ let comprobarStock = productos.filter((elemento) => elemento.stock >= 2)
 
 console.table(comprobarStock);
 
-console.table(productos);
-
 alert("bienvenido a tienda JM")
 
 let producto = prompt("elija que producto desea comprar!:\n1. televisor\n2. Celular\n3. Heladera\n0.Salir ");
@@ -98,3 +96,8 @@ console.table(productos)
 
 
 alert("gracias por comprar en tienda JM")
+
+
+const btn = document.querySelector(".btn");
+
+btn.addEventListener('click',() => alert('agregaste este item al carro'));
