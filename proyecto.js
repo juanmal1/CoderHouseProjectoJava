@@ -6,21 +6,24 @@ const recargo = x => x * 0.25;
 
 const productos = [
     {
+        id:1,
         nombre: "Televisor",
         precio: 15500,
         stock: 3
     },
     {
+        id:2,
         nombre: "Celular",
         precio: 13000,
         stock: 5
     },
     {
+        id:3,
         nombre: "Heladera",
-        precio: 9500,
+        precio: 25000,
         stock: 2
     }
-]
+];
 
 let comprobarStock = productos.filter((elemento) => elemento.stock >= 2)
 
@@ -66,7 +69,7 @@ while(producto !="0"){
     }
     console.log(carrito)
     producto = prompt("elija otro producto desea comprar!:\n1. televisor\n2. Celular\n3. Heladera\n0.Salir ")
-}
+};
 
 let total = 0; for(let i of carrito) total+=i;
 alert('el total te la compra es ' + total)
@@ -98,6 +101,5 @@ console.table(productos)
 alert("gracias por comprar en tienda JM")
 
 
-const btn = document.querySelector(".btn");
 
-btn.addEventListener('click',() => alert('agregaste este item al carro'));
+
